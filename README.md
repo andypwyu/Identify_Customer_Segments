@@ -23,34 +23,36 @@ This is the project of Term 1 Udacity Data Scientist Nanodegree. In this project
 Identify_Customer_Segments.ipynb: showcase data processing and analysis of the project
 
 Due to the sensitive and proprietary nature of the demographics data used in the project, the data will not be provided:
-1. Udacity_AZDIAS_Subset.csv: Demographics data for the general population of Germany; 891211 persons (rows) x 85 features (columns).
-2. Udacity_CUSTOMERS_Subset.csv: Demographics data for customers of a mail-order company; 191652 persons (rows) x 85 features (columns).
-3. Data_Dictionary.md: Detailed information file about the features in the provided datasets.
-4. AZDIAS_Feature_Summary.csv: Summary of feature attributes for demographics data; 85 features (rows) x 4 columns
+* Udacity_AZDIAS_Subset.csv: Demographics data for the general population of Germany; 891211 persons (rows) x 85 features (columns).
+* Udacity_CUSTOMERS_Subset.csv: Demographics data for customers of a mail-order company; 191652 persons (rows) x 85 features (columns).
+* Data_Dictionary.md: Detailed information file about the features in the provided datasets.
+* AZDIAS_Feature_Summary.csv: Summary of feature attributes for demographics data; 85 features (rows) x 4 columns
 
 ## Results<a name="results"></a>
 
 For cluster 1, which is overrepresented:
 
-Number of 6-10 family houses in the PLZ8 region is lower (PLZ8_ANTG3=1.16)
-Prosperous households (WEALTH=2.08)
-Estimated household net income is high income (HH_EINKOMMEN_SCORE = 2.39)
-In life stage of Families With School Age Children or Older Families & Mature Couples (LIFE_STAGE=3.63)
-Density of households per square kilometer is 150 - 319 households per km^2 (EWDICHTE = 3.93)
-Movement patterns is low(MOBI_REGIO = 4.17)
-Number of 1-2 family houses in the microcell is close to high share (KBA05_ANTG1 = 2.76)
+* Number of 6-10 family houses in the PLZ8 region is lower (PLZ8_ANTG3=1.16)
+* Prosperous households (WEALTH=2.08)
+* Estimated household net income is high income (HH_EINKOMMEN_SCORE = 2.39)
+* In life stage of Families With School Age Children or Older Families & Mature Couples (LIFE_STAGE=3.63)
+* Density of households per square kilometer is 150 - 319 households per km^2 (EWDICHTE = 3.93)
+* Movement patterns is low(MOBI_REGIO = 4.17)
+* Number of 1-2 family houses in the microcell is close to high share (KBA05_ANTG1 = 2.76)
+
 Cluster 1 segment is company's target audiences, with a characteristic of higher income, family with children or mature couples, and stable in movement pattern.
 
 
 For cluster 0, which is underrepresented:
 
-Number of 6-10 family houses in the PLZ8 region is between average and high (PLZ8_ANTG3=2.68)
-Less Affluent or poorer Households households (WEALTH=4.54)
-Estimated household net income is lower income (HH_EINKOMMEN_SCORE = 5.64)
-In life stage of Young Couples With Children (LIFE_STAGE=1.85)
-Density of households per square kilometer is 320 - 999 households per km^2 or more(EWDICHTE = 5.65)
-Movement patterns is high(MOBI_REGIO = 1.46)
-Number of 1-2 family houses in the microcell is close to no 1-2 family homes (KBA05_ANTG1 = 0.20)
+* Number of 6-10 family houses in the PLZ8 region is between average and high (PLZ8_ANTG3=2.68)
+* Less Affluent or poorer Households households (WEALTH=4.54)
+* Estimated household net income is lower income (HH_EINKOMMEN_SCORE = 5.64)
+* In life stage of Young Couples With Children (LIFE_STAGE=1.85)
+* Density of households per square kilometer is 320 - 999 households per km^2 or more(EWDICHTE = 5.65)
+* Movement patterns is high(MOBI_REGIO = 1.46)
+* Number of 1-2 family houses in the microcell is close to no 1-2 family homes (KBA05_ANTG1 = 0.20)
+
 Cluster 0 segment seems not to be company's audiences, with a characteristic of lower income, young couples, and easy to move.
 
 
